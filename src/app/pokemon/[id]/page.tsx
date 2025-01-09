@@ -17,7 +17,7 @@ export default async function PokemonDetails({
   if (!pokemon) return <div>Pokémon non trouvé</div>;
 
   return (
-    <div className="pokemon-details">
+    <div className="pokemon-details text-center">
       <Link href="/">← Retour à la liste des Pokémon</Link>
       <br></br>
       <h1>#{pokemon.id} {pokemon.name}</h1>
@@ -26,7 +26,7 @@ export default async function PokemonDetails({
           <img key={type.id} src={type.image} alt={type.name} className="type-image" />
         ))}
       </div>
-      <img src={pokemon.image} alt={pokemon.name} />
+      <img className="pokemon-image" src={pokemon.image} alt={pokemon.name} />
       <p>Génération : {pokemon.generation}</p>
       <br></br>
       <div className="pokemon-evolutions">

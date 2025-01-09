@@ -9,7 +9,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #d30d0d;
     --foreground: #ededed;
   }
 }
@@ -45,3 +45,14 @@ body {
   justify-content: center;
   gap: 8px;
 }
+
+.pokemon-types-details {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.pokemon-image {
+  display: initial;
+}
+

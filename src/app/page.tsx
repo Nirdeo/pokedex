@@ -81,7 +81,7 @@ const PokemonList = () => {
 
   return (
     <>
-    <div className='filters'>
+    <div className='filters text-black'>
       <input
         type="text"
         placeholder="Rechercher par nom"
@@ -105,7 +105,7 @@ const PokemonList = () => {
       <div className="pokemon-list">
         {filteredPokemons.map((pokemon) => (
           <Link href={`/pokemon/${pokemon.id}`} key={pokemon.id}>
-            <div className="pokemon-card">
+            <div className="pokemon-card text-black">
               <p>#{pokemon.id}</p>
               <p>{pokemon.name}</p>
               <img src={pokemon.image} alt={pokemon.name} />
