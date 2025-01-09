@@ -37,7 +37,7 @@ const PokemonList = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [types, setTypes] = useState<{ id: number; name: string; image: string }[]>([]);
   const [selectedType, setSelectedType] = useState('');
-  const [selectedLimit, setSelectedLimit] = useState('');
+  const [selectedLimit, setSelectedLimit] = useState('50');
 
   const fetchPokemons = async (limit = 50) => {
     try {

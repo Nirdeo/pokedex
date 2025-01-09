@@ -18,7 +18,8 @@ export default async function PokemonDetails({
 
   return (
     <div className="pokemon-details">
-      <Link href="/">Retour à la liste des Pokémon</Link>
+      <Link href="/">← Retour à la liste des Pokémon</Link>
+      <br></br>
       <h1>#{pokemon.id} {pokemon.name}</h1>
       <div className="pokemon-types">
         {pokemon.types.map((type : { id: number; name: string; image: string }) => (
